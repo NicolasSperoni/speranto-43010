@@ -50,7 +50,7 @@ a{
 }
 
 .titulo{
-    background-image: url(https://images.unsplash.com/photo-1551917230-e273ee50c5e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80);
+    background-image: url(../img/fondoindex.png);
     height: 645px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -131,7 +131,7 @@ a{
 /* ----------------------CUATRO C--------------------------------------------*/
 
 main .cuatroc{
-    background-image: url(https://images.unsplash.com/photo-1565813785068-5ca194ff39e6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);
+    background-image: url(../img/cuatroc.png);
     text-align: center;
     color: white;
     height: 400px;
@@ -194,7 +194,7 @@ main .redes .socialmedia{
 /*-------NOSOTROS----------------------------------------------------*/
 
 .mainnosotros{
-    background-image: url(https://images.unsplash.com/photo-1666537072325-b8393fde9a3a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80) ;
+    background-image: url(../img/fondonosotros.png) ;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -319,7 +319,7 @@ main section div p{
 /*---------------PRODUCTOS------------------------------------------- */
 
 .mainproduc{
-    background-image: url(https://images.pexels.com/photos/10410095/pexels-photo-10410095.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-image: url(../img/fondoproductos.png);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -378,7 +378,8 @@ main section div p{
 
 
 .muebles section div div h4{
-    font-weight: 700;
+    font-weight: 800;
+    font-size: 15px;
 }
 
 .muebles section div div p{
@@ -395,14 +396,17 @@ main section div p{
     height: 18px;
     font-weight: 800;
     font-family: 'Bacasime Antique', serif;
-    
+}
+
+.muebles section div div button a:hover{
+    color: rgba(0, 0, 0, 0.564);
 }
 
 
 /* --------------TIENDAS--------------------------------------------- */
 
 .maintiendas{
-    background-image: url(https://d1jm8cj370suov.cloudfront.net/slider/desktop/4-4827-frame0.jpg);
+    background-image: url(../img/fondotiendas.png);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -453,8 +457,8 @@ main section div p{
 
 
 .info-tiendas section h3{
-    padding-bottom: 10px;
     font-weight: 700;
+    font-size: 20px;
 }
 
 .info-tiendas section section{
@@ -470,13 +474,14 @@ main section div p{
 
 .info-tiendas section section div p{
     padding-top: 10px;
-    padding-bottom: 10px;
     font-size: 15px;
     font-weight: 400;
 }
 
 .info-tiendas section section div h4{
     padding-top: 10px ;
+    font-size: 18px;
+    font-weight: 700;
 }
 
 .info-tiendas section section div div a{
@@ -489,7 +494,7 @@ main section div p{
 
 /*-----CONTACTO------------------------------------------------------*/
 .maincontacto{
-    background-image: url(https://images.unsplash.com/photo-1581094725469-f429921c09c1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);
+    background-image: url(../img/fondocontacto.png);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -596,6 +601,7 @@ main .contacto{
 
 .contacto .info-contacto div h6{
     font-size: 15px;
+    font-weight: 600;
     padding: 30px 0px 20px 0px;
 }
 
@@ -847,14 +853,22 @@ footer section div hr{
 
 @media screen and (max-width:500px){
 
+    .titulo{
+        height: 350px;
+    }
+
+    .titulo div{
+        margin-top: 0px;
+    }
+
     .titulo div h1{
-        font-size: 30px;
+        font-size: 28px;
         font-weight: 700;
     } 
 
     .titulo div h2{
         font-weight: 700;
-        font-size: 20px;
+        font-size: 17px;
     }
     main .cuatroc{
         display: none;
