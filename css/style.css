@@ -1148,7 +1148,6 @@ footer section div hr{
 
     .datosnosotros .quienessomos .intro{
         font-size: 22px;
-        text-align: center;
     }
 
     .datosnosotros .quienessomos p{
@@ -1461,6 +1460,29 @@ footer section div hr{
     }
 
     .contacto{
+        margin-left: 20px;
+    }
+
+    .contacto .formulario{
+        display: grid;
+        grid-template-columns: 340px;
+    }
+
+    .contacto .formulario .mensaje textarea{
+        width: 340px;
+    }
+
+    .contacto .formulario .boton button{
+        width: 340px;
+    }
+
+    .contacto .formulario div input{
+        margin-right: 0px;
+    }
+}
+
+@media screen and (max-width:375px){
+    .contacto{
         margin-left: 6px;
     }
 
@@ -1474,13 +1496,6 @@ footer section div hr{
     }
 
     .contacto .formulario .boton button{
-        width: 310px;
+        width: 310px; 
     }
-
-    .contacto .formulario div input{
-        margin-right: 0px;
-    }
-
-
-
 }
