@@ -16,6 +16,7 @@ header{
     position: sticky;
     top: 0;
     font-family: 'Nunito Sans', sans-serif;
+    z-index: 10;
 }
 
 header nav{
@@ -37,12 +38,6 @@ header nav div #navbarSupportedContent ul li{
     margin-right: 37px;
 }
 
-header nav div #navbarSupportedContent ul{
-    display: flex;
-    justify-content: flex-end;
-}
-
-
 /* ----------MAIN-----------------------------------------------------------*/
 a{
     text-decoration: none;
@@ -51,7 +46,7 @@ a{
 
 .titulo{
     background-image: url(../img/fondoindex.png);
-    height: 645px;
+    height: 655px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -80,54 +75,104 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0px 100px 0px 100px
+    margin: 50px 100px 0px 100px
 }
 
 .datos-flia .familia{
-    width: 45%;
-    margin-left: 60px;
+    width: 55%;
+    border: 2px solid rgba(0, 0, 0, 0.094);
+    padding: 20px;
+    margin-left: 20px;
 }
 
 .datos-flia .familia h4{
-    font-size: 25px;
+    font-size: 15px;
+    font-weight: 700;
 }
+
+.datos-flia .familia p{
+    font-size: 40px;
+    font-family: 'Bacasime Antique', serif;
+}
+
+.datos-flia .familia .sucursales{
+    font-size: 25px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    color: grey;
+}
+
 
 .datos-flia div h3{
     font-size: 300px;
     font-weight: 100;
-
+    color: rgba(128, 128, 128, 0.724);
 }
+
 .datos-flia div h3 span{
     font-size: 25px;
 }
 
-.datos-tiendas{
+
+main .proyectos{
+    box-shadow: 0px -8px 56px -13px rgba(57,57,57,0.77);
+-webkit-box-shadow: 0px -8px 56px -13px rgba(57,57,57,0.77);
+-moz-box-shadow: 0px -8px 56px -13px rgba(57,57,57,0.77);
+    margin: 70px 100px 20px 100px;
+    font-family: 'Bacasime Antique', serif;
+}
+
+main .proyectos h3{
+    text-align: center;
+    font-weight: 800;
+    font-size: 30px;
+}
+
+main .producdestacados div h3{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Bacasime Antique', serif;
+
+}
+
+main .producdestacados{
+    margin: 100px 50px 100px 50px;
+}
+
+main .producdestacados section{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+.producdestacados section div{
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin: 0px 100px 0px 100px;
+    margin: 0px 40px 10px 40px;
+    width: 325px;
+    height: 300px;
 }
 
-.datos-tiendas .tiendas{
-    width: 45%;
-    margin-right: 60px;
+.producdestacados section div img{
+    width: 380px;
+    height: 220px;
 }
 
-.datos-tiendas .tiendas h4{
-    font-size: 25px;
+.producdestacados section div h4{
+    font-family: 'Bacasime Antique', serif;
+    font-size: 20px;
+    font-weight: 500;
 }
 
-.datos-tiendas div h3{
-    font-size: 300px;
-    font-weight: 100;
+.producdestacados section div p{
+    font-size: 15px;
+    font-weight: 500;
+    color: grey;
 }
-
-.datos-tiendas div h3 span{
-    font-size: 25px;
-}
-
-
 /* ----------------------CUATRO C--------------------------------------------*/
 
 main .cuatroc{
@@ -163,15 +208,15 @@ main .redes{
 }
 
 .redes div h3{
-    font-size: 200px;
+    font-size: 150px;
     font-weight: 100;
 }
 
 .redes div h5{
     margin-bottom: 30px;
-    margin-top: -50px;
+    margin-top: -25px;
     color: grey;
-    font-weight: 500;
+    font-weight: 300;
 }
 
 main .redes .socialmedia{
@@ -181,12 +226,17 @@ main .redes .socialmedia{
 }
 
 .redes .socialmedia div p{
-    margin: 0px 50px 0px 50px;
+    margin: 0px 50px 5px 50px;
 }
 
 .redes .socialmedia a img{
     width: 20px;
     margin-right: 7px;
+    margin-bottom: 5px;
+}
+
+main .redes .socialmedia div a:hover{
+    color: black;
 }
 
 
@@ -258,6 +308,7 @@ main section div p{
     margin: 100px 0px;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .fotoshistoricas img{
@@ -487,12 +538,19 @@ main section div p{
 .info-tiendas section section div div a{
     color: grey;
 }
+
 .info-tiendas section section div div a:hover{
     text-decoration: underline;
     color: black;
 }
 
+.info-tiendas section hr{
+    opacity: 0.1;
+}
+
+
 /*-----CONTACTO------------------------------------------------------*/
+
 .maincontacto{
     background-image: url(../img/fondocontacto.png);
     display: flex;
@@ -525,6 +583,7 @@ main .contacto{
     display: flex;
     justify-content: space-evenly;
     align-items: start;
+    flex-wrap: wrap;
     margin-top: 50px;
     margin-bottom: 100px;
 }
@@ -701,7 +760,23 @@ footer section div hr{
     opacity: 0.1;
 }
 
-/*--------------- MEDIA QUERIES del MAIN---------------------------------------------------------------------------- */
+/*--------------- MEDIA QUERIES del INDEX Y FOOTER---------------------------------------------------------------------------- */
+@media screen and (max-width:1080px){
+    .datos-flia{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+    }
+
+    .datos-flia .familia{
+        width: 80%;
+        margin-left: 0px;
+        text-align: center;
+    }
+}
+
 
 @media screen and (max-width:941px){
     main .cuatroc div h4{
@@ -738,20 +813,6 @@ footer section div hr{
         margin-left: 0px;
         text-align: center;
     }
-
-    .datos-tiendas{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        margin: 0px;
-    }
-    
-    .datos-tiendas .tiendas{
-        width: 80%;
-        margin-right: 0px;
-        text-align: center;
-    }
 }
 
 @media screen and (max-width:780px){
@@ -761,7 +822,7 @@ footer section div hr{
     }
 
     .titulo{
-        height: 555px;
+        height: 560px;
     }
 
     .titulo div h1{
@@ -773,6 +834,11 @@ footer section div hr{
         font-weight: 700;
         font-size: 20px;
     }
+
+    main .proyectos{
+        margin: 70px 0px 20px 0px;
+    }
+    
 
     main .cuatroc{
         height: 300px;
@@ -854,7 +920,7 @@ footer section div hr{
 @media screen and (max-width:500px){
 
     .titulo{
-        height: 350px;
+        height: 560px;
     }
 
     .titulo div{
@@ -874,6 +940,14 @@ footer section div hr{
         display: none;
     }
 
+    .datos-flia .familia p{
+        font-size: 30px;
+    }
+    
+    .datos-flia .familia .sucursales{
+        font-size: 20px;
+    }
+
     .datos-flia div h3{
         font-size: 200px;
     }
@@ -881,13 +955,225 @@ footer section div hr{
     .datos-flia div h3 span{
         font-size: 20px;
     }
-    
-    .datos-tiendas div h3{
-        font-size: 200px;
+
+    main .proyectos h3{
+        font-size: 25px;
     }
 
-    .datos-tiendas div h3 span{
-        font-size: 20px;
+    main .producdestacados div h3{
+        font-size: 25px;
+    }
+    
+    main .producdestacados{
+        margin: 100px 0px 100px 0px;
+    }
+    
+    .producdestacados section div img{
+        width: 320px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width:340px){
+    .datos-flia .familia p{
+        font-size: 25px;
+    }
+    
+    .datos-flia .familia .sucursales{
+        font-size: 16px;
+    }
+}
+/*--------------- MEDIA QUERIES de NOSOTROS---------------------------------------------------------------------------- */
+
+@media screen and (max-width:1415px){
+    .fotoshistoricas img{
+        width: 550px;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width:1350px){
+    .datosnosotros .años{
+        display: none;
+    }
+
+    .datosnosotros{
+        margin: 80px 100px 80px 100px;
+    }
+
+    .datosnosotros .quienessomos{
+        margin: 0px;
+    }
+}
+
+@media screen and (max-width:1200px){
+    .plantamodelo{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+    }
+
+    .plantamodelo .industrial{
+        margin: 0px 100px 0px 100px;
+    }
+
+    .plantamodelo .plantaimg img{
+        width: 800px;
+    }
+
+    .capacidad{
+        margin: 100px 0px 100px 0px;
+    }
+
+    .capacidad h4{
+        margin: 0px 0px 40px 100px;
+    }
+
+    .capacidad section{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .capacidad section div{
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width:1099px){
+    .fotoshistoricas{
+        margin-top: 0px;
+    }
+
+    .fotoshistoricas img{
+        margin-top: 50px ;
+    }
+
+    .fotoshistoricas img{
+        width: 800px;
+        height: 500px;
+    }
+}
+
+@media screen and (max-width:815px){ 
+    .fotoshistoricas img{
+        width: 600px;
+        height: 350px; 
+    }
+
+    .plantamodelo .plantaimg img{
+        width: 600px;
+    }
+
+    .datosnosotros{
+        margin: 80px 50px 80px 50px;
+    }
+
+}
+
+@media screen and (max-width:640px){
+    .mainnosotros div h1{
+        font-size: 50px;
+    }
+
+    .datosnosotros{
+        margin: 80px 50px 0px 50px;
+    }
+
+    .datosnosotros .quienessomos .intro{
+        font-size: 30px;
+        font-weight: 300;
+        padding-bottom: 5px;
+    }
+
+    .datosnosotros .quienessomos p{
+        font-size: 17px;
+    }
+
+    .fotoshistoricas{
+        margin: 0px 0px 80px 0px; 
+    }
+
+    .fotoshistoricas img{
+        width: 400px;
+        height: 300px; 
+    }
+
+    .plantamodelo .plantaimg img{
+        width: 400px;
+    }
+
+    .capacidad section div h5{
+        font-size: 30px;
+    }
+
+}
+
+@media screen and (max-width:525px){
+
+    .datosnosotros{
+        margin: 80px 15px 0px 15px;
+    }
+
+    .plantamodelo{
+        margin: 0px;
+    }
+
+    .plantamodelo .industrial{
+        margin: 15px;
+    }
+
+    .plantamodelo .industrial p{
+        font-size: 17px;
+    }
+
+    .capacidad section div p{
+        font-size: 17px;
+    }
+
+    .capacidad{
+        margin: 50px 15px 50px 15px;
+    }
+
+    .capacidad h4{
+        margin: 0px 0px 20px 0px;
+    }
+}
+
+@media screen and (max-width:415px){
+
+    .datosnosotros{
+        margin: 60px 15px 0px 15px;
+    }
+
+    .datosnosotros .quienessomos .intro{
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .datosnosotros .quienessomos p{
+        font-size: 15px;
+    }
+
+    .fotoshistoricas img{
+        width: 300px;
+        height: 200px; 
+    }
+
+    .plantamodelo .plantaimg img{
+        width: 300px;
+    }
+
+    .plantamodelo .industrial p{
+        font-size: 15px;
+    }
+
+    .plantamodelo .industrial h4{
+        font-size: 17px;
+    }
+
+    .capacidad section div h5{
+        font-size: 22px;
     }
 }
 
@@ -925,4 +1211,276 @@ footer section div hr{
     .muebles section div div img{
         width: 320px;  
     }
+}
+
+/*--------------- MEDIA QUERIES de TIENDAS---------------------------------------------------------------------------- */
+
+@media screen and (max-width:1399px){
+    
+    .primertienda{
+        margin-top: 50px;
+    }
+
+    .info-tiendas section section{
+        margin-bottom: 50px;
+    } 
+
+}
+
+@media screen and (max-width:720px){
+
+    .info-tiendas section section {
+        height: 200px;
+        width: 580px;
+    }
+
+    .info-tiendas section section .dire-contact{
+        width: 350px;
+    }
+
+    .info-tiendas section section .dire-contact{
+        margin-right: 10px; 
+    }
+}
+
+@media screen and (max-width:590px){
+
+    .info-tiendas{
+        margin: 0px;
+    }
+
+    .primertienda{
+        margin-top: 50px;
+    }
+    
+    .info-tiendas section section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info-tiendas section section{
+        height: auto;
+        width: 400px;
+        margin-bottom: 15px;
+    } 
+
+    .info-tiendas section section div h4{
+        padding-top: 20px ; 
+    }
+}
+
+
+@media screen and (max-width:449px){
+    .maintiendas div h1{
+        font-size: 50px;
+    }
+
+    .maintiendas div h2{
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width:425px){
+    .info-tiendas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 10px;
+    }
+
+    .info-tiendas section section {
+        height: auto;
+        width: 310px;
+    
+    }
+
+    .info-tiendas section{
+        width: 310px;
+    }
+
+    .info-tiendas section hr{
+        width: 300px;
+        margin-bottom: -20px;
+    }
+
+    .info-tiendas section div{
+        width: 310px;
+    }
+
+    .info-tiendas section section .dire-contact{
+        width: 310px;
+    }
+}
+
+/*--------------- MEDIA QUERIES de CONTACTOS---------------------------------------------------------------------------- */
+
+@media screen and (max-width:1000px){
+    .intro-contacto{
+        text-align: center;
+        width: auto;
+        margin-top: 80px;
+        margin-right: 80px;
+        margin-left: 80px;
+    }
+
+    .contacto .formulario{
+        display: grid;
+        grid-template-columns: 500px;
+        grid-template-rows: 100px 100px 100px 100px 100px 100px 200px 100px;
+    }
+
+    .contacto .formulario .nombre{
+        grid-column: 1;
+        grid-row: 1/2;
+    }
+
+    .contacto .formulario .email{
+        grid-column: 1;
+        grid-row: 2/3;
+    }
+
+    .contacto .formulario .telefono{
+        grid-column: 1;
+        grid-row: 3/4;
+    }
+
+    .contacto .formulario .provincia{
+        grid-column: 1;
+        grid-row: 4/5;
+    }
+
+    .contacto .formulario .ciudad{
+        grid-column: 1;
+        grid-row: 5/6;
+    }
+
+    .contacto .formulario .motivo{
+        grid-column: 1;
+        grid-row: 6/7;
+    }
+
+    .contacto .formulario .mensaje{
+        grid-column: 1;
+        grid-row: 7/8;
+    }
+
+    .contacto .formulario .mensaje textarea{
+        padding: 5px;
+        font-size: 17px;
+        width: 480px;
+    }
+
+    .contacto .formulario .boton{
+        grid-column: 1;
+        grid-row: 8/9;
+    }
+}
+
+@media screen and (max-width:780px){
+
+    .contacto .formulario{
+        display: grid;
+        grid-template-columns: 550px;
+    }
+
+    .contacto .formulario .mensaje textarea{
+        width: 530px;
+    }
+    
+    .contacto{
+        display: flex;
+        flex-direction: column;
+        margin: 50px 25px 100px 25px;
+    }
+
+    .contacto .formulario .boton button{
+        width: 530px;
+        height: 50px;
+    }
+
+    .contacto .info-contacto h5{
+        font-size: 30px;
+    }
+    
+    .contacto .info-contacto div h6{
+        font-size: 18px;
+        padding: 25px 0px 10px 0px;
+    }
+
+    .contacto .info-contacto div p br{
+        display: none;
+    }
+
+    .contacto .info-contacto div p{
+        margin: 0px;
+    }
+
+}
+
+@media screen and (max-width:585px){
+
+    .maincontacto h1{
+        font-size: 55px;
+    }
+
+    .intro-contacto{
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .intro-contacto div p{
+        font-size: 16px;
+    }
+
+    .contacto .formulario{
+        display: grid;
+        grid-template-columns: 380px;
+    }
+
+    .contacto .formulario .mensaje textarea{
+        width: 360px;
+    }
+
+    .contacto .formulario .boton button{
+        width: 360px;
+    }
+}
+
+@media screen and (max-width:439px){
+    .maincontacto h1{
+        font-size: 40px;
+    }
+
+    .intro-contacto{
+        margin: 40px 7px 0px 7px;
+    }
+
+    .intro-contacto div p{
+        font-size: 14px;
+    }
+
+    .contacto{
+        margin-left: 6px;
+    }
+
+    .contacto .formulario{
+        display: grid;
+        grid-template-columns: 310px;
+    }
+
+    .contacto .formulario .mensaje textarea{
+        width: 310px;
+    }
+
+    .contacto .formulario .boton button{
+        width: 310px;
+    }
+
+    .contacto .formulario div input{
+        margin-right: 0px;
+    }
+
+
+
 }
