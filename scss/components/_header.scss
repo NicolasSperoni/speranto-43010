@@ -1,0 +1,27 @@
+header{
+    position: sticky;
+    top: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    z-index: 10;
+    nav{
+        background-color: black;
+        .contenedor-nav{
+            a{
+                font-size: 30px;
+                margin: 15px;
+                font-weight: 700;
+            }
+            #navbarSupportedContent{
+                ul{
+                    li{
+                        margin-right: 37px;
+                        a{
+                            font-size: 17px;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

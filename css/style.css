@@ -785,21 +785,6 @@ footer section div hr{
 }
 
 @media screen and (max-width:900px){
-    header nav ul .speranto{
-        display: none;
-    }
-    
-    header nav ul{
-        padding-left: 0px;
-        padding-top: 45px;
-        display: flex;
-        justify-content: space-evenly;
-    }
-    
-    header nav ul li{
-        padding: 0px;
-    }
-
     .datos-flia{
         display: flex;
         flex-direction: column;
@@ -1291,7 +1276,6 @@ footer section div hr{
     .info-tiendas section section {
         height: auto;
         width: 310px;
-    
     }
 
     .info-tiendas section{
