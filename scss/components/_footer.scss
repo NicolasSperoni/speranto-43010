@@ -22,6 +22,8 @@ footer{
             }
             a{
                 color: rgb(134, 134, 134);
+                transition: color 0.5s;
+                padding-bottom: 15px;
                 &:hover{
                     color: white;
                 }
@@ -29,6 +31,7 @@ footer{
                     height: 15px;
                     filter: invert(50%);
                     padding-right: 5px;
+                    transition: filter 0.5s;
                     &:hover{
                         filter: invert(100%);
                     }

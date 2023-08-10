@@ -29,7 +29,10 @@ header {
       margin-right: 37px; }
       header nav .contenedor-nav #navbarSupportedContent ul li a {
         font-size: 17px;
-        font-weight: 400; }
+        font-weight: 400;
+        transition: color 0.5s; }
+        header nav .contenedor-nav #navbarSupportedContent ul li a:hover {
+          color: #cfcfcf !important; }
 
 main .titulo {
   background-image: url(../img/fondoindex.png);
@@ -41,6 +44,8 @@ main .titulo {
   justify-content: center;
   align-items: center; }
   main .titulo div {
+    animation-duration: 1s;
+    animation-delay: 0s;
     text-align: center;
     color: white; }
     main .titulo div h2 {
@@ -78,16 +83,18 @@ main .datos-flia {
       font-weight: 400;
       color: grey; }
 
-main .container .proyectos {
-  box-shadow: 0px -8px 56px -13px rgba(57, 57, 57, 0.77);
-  -webkit-box-shadow: 0px -8px 56px -13px rgba(57, 57, 57, 0.77);
-  -moz-box-shadow: 0px -8px 56px -13px rgba(57, 57, 57, 0.77);
-  margin: 70px 100px 20px 100px;
-  font-family: 'Bacasime Antique', serif; }
-  main .container .proyectos h3 {
-    text-align: center;
-    font-weight: 800;
-    font-size: 30px; }
+main .container {
+  margin-top: 150px; }
+  main .container .proyectos {
+    box-shadow: 0px -8px 56px -13px rgba(57, 57, 57, 0.77);
+    -webkit-box-shadow: 0px -8px 56px -13px rgba(57, 57, 57, 0.77);
+    -moz-box-shadow: 0px -8px 56px -13px rgba(57, 57, 57, 0.77);
+    margin: 70px 100px 20px 100px;
+    font-family: 'Bacasime Antique', serif; }
+    main .container .proyectos h3 {
+      text-align: center;
+      font-weight: 800;
+      font-size: 30px; }
 
 main .producdestacados {
   margin: 100px 50px 100px 50px; }
@@ -111,11 +118,15 @@ main .producdestacados {
       height: 300px; }
       main .producdestacados section div a img {
         width: 380px;
-        height: 220px; }
+        height: 220px;
+        transition: transform 1s; }
+        main .producdestacados section div a img:hover {
+          transform: scale(1.1); }
       main .producdestacados section div h4 {
         font-family: 'Bacasime Antique', serif;
         font-size: 20px;
-        font-weight: 500; }
+        font-weight: 500;
+        padding-top: 10px; }
       main .producdestacados section div p {
         font-size: 15px;
         font-weight: 500;
@@ -164,7 +175,10 @@ main .redes {
     main .redes .socialmedia div a img {
       width: 20px;
       margin-right: 7px;
-      margin-bottom: 5px; }
+      margin-bottom: 5px;
+      transition: transform 0.5s; }
+      main .redes .socialmedia div a img:hover {
+        transform: scale(1.25); }
     main .redes .socialmedia div p {
       margin: 0px 50px 5px 50px; }
 
@@ -246,7 +260,11 @@ main .capacidad {
     display: flex;
     justify-content: space-around; }
     main .capacidad section div {
-      text-align: center; }
+      text-align: center;
+      transition: transform 0.3s;
+      cursor: pointer; }
+      main .capacidad section div:hover {
+        transform: scale(1.04); }
       main .capacidad section div h5 {
         font-size: 40px; }
       main .capacidad section div p {
@@ -292,10 +310,14 @@ main .muebles {
       height: 300px; }
       main .muebles section div div img {
         width: 325px;
-        height: 180px; }
+        height: 180px;
+        transition: transform 1s; }
+        main .muebles section div div img:hover {
+          transform: scale(1.1); }
       main .muebles section div div h4 {
         font-weight: 800;
-        font-size: 15px; }
+        font-size: 15px;
+        padding-top: 10px; }
       main .muebles section div div p {
         font-size: 15px;
         font-weight: 300;
@@ -308,8 +330,10 @@ main .muebles {
         height: 18px;
         font-weight: 800;
         font-family: 'Bacasime Antique', serif; }
-        main .muebles section div div button a:hover {
-          color: rgba(0, 0, 0, 0.564); }
+        main .muebles section div div button a {
+          transition: color 0.5s; }
+          main .muebles section div div button a:hover {
+            color: rgba(0, 0, 0, 0.564); }
 
 main .maintiendas {
   background-image: url(../img/fondotiendas.png);
@@ -360,9 +384,9 @@ main .info-tiendas {
           font-size: 15px;
           font-weight: 400; }
         main .info-tiendas section section .dire-contact div a {
-          color: grey; }
+          color: grey;
+          transition: color 0.5s; }
           main .info-tiendas section section .dire-contact div a:hover {
-            text-decoration: underline;
             color: black; }
       main .info-tiendas section section div h4 {
         padding-top: 10px;
@@ -507,7 +531,10 @@ main .contacto {
         width: 200px;
         height: 50px;
         border-radius: 5px;
-        cursor: pointer; }
+        cursor: pointer;
+        transition: transform 0.4s ease-in; }
+        main .contacto .formulario .boton button:hover {
+          transform: translateY(-4px); }
   main .contacto .info-contacto h5 {
     font-size: 20px;
     font-weight: 700; }
@@ -522,10 +549,21 @@ main .contacto {
   main .contacto .info-contacto div a {
     color: grey;
     font-size: 15px;
-    font-weight: 400; }
-    main .contacto .info-contacto div a:hover {
-      text-decoration: underline;
-      color: black; }
+    font-weight: 400;
+    text-decoration: none;
+    position: relative; }
+    main .contacto .info-contacto div a:after {
+      content: '';
+      position: absolute;
+      right: 0;
+      bottom: -2px;
+      width: 100%;
+      border-bottom: 2px solid black;
+      transform: scaleX(0);
+      transform-origin: bottom center;
+      transition: transform 0.3s ease-in-out; }
+    main .contacto .info-contacto div a:hover::after {
+      transform: scaleX(1); }
 
 footer {
   background-color: black;
@@ -549,13 +587,16 @@ footer {
         font-weight: 300;
         padding-bottom: 10px; }
       footer section .info-foot a {
-        color: #868686; }
+        color: #868686;
+        transition: color 0.5s;
+        padding-bottom: 15px; }
         footer section .info-foot a:hover {
           color: white; }
         footer section .info-foot a img {
           height: 15px;
           filter: invert(50%);
-          padding-right: 5px; }
+          padding-right: 5px;
+          transition: filter 0.5s; }
           footer section .info-foot a img:hover {
             filter: invert(100%); }
       footer section .info-foot p {

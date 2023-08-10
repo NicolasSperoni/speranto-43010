@@ -18,6 +18,10 @@ header{
                         a{
                             font-size: 17px;
                             font-weight: 400;
+                            transition: color 0.5s;
+                            &:hover{
+                                color: rgb(207, 207, 207) !important; 
+                            }
                         }
                     }
                 }
