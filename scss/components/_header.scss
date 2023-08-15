@@ -4,12 +4,13 @@ header{
     font-family: 'Nunito Sans', sans-serif;
     z-index: 10;
     nav{
-        background-color: black;
+        background-color: $color-primario;
         .contenedor-nav{
             a{
-                font-size: 30px;
                 margin: 15px;
-                font-weight: 700;
+                img{
+                    width: 200px;
+                }
             }
             #navbarSupportedContent{
                 ul{

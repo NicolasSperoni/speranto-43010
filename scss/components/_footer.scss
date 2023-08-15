@@ -1,6 +1,6 @@
 footer{
-    background-color: black;
-    color: white;
+    background-color: $color-primario;
+    color: $color-secundario;
     height: 250px;
     section{
         display: grid;
@@ -13,7 +13,7 @@ footer{
             align-self: flex-start;
             font-weight: 400;
             font-size: 13px;
-            color: white;
+            color: $color-secundario;
             h6{
                 font-family: 'Bacasime Antique', serif;
                 font-size: 17px;
@@ -21,11 +21,11 @@ footer{
                 padding-bottom: 10px;
             }
             a{
-                color: rgb(134, 134, 134);
+                color: $color-terciario;
                 transition: color 0.5s;
                 padding-bottom: 15px;
                 &:hover{
-                    color: white;
+                    color: $color-secundario;
                 }
                 img{
                     height: 15px;
@@ -38,7 +38,7 @@ footer{
                 }
             }
             p{
-                color: rgb(134, 134, 134);
+                color: $color-terciario;
                 padding-top: 10px;
             }
         }
@@ -54,10 +54,9 @@ footer{
             grid-row: 3/4;
             font-weight: 700;
             font-size: 30px;
-            color: white;
             text-align: center;
             a{
-                color: white;
+                color: $color-secundario;
             }
         }
         

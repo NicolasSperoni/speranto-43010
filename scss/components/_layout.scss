@@ -1,18 +1,11 @@
 main{
     .titulo{
-        background-image: url(../img/fondoindex.png);
-        height: 655px;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include imagen-principal(url(../img/fondoindex.png),no-repeat,cover,center,655px, flex, center, center);
         div{
             animation-duration: 1s;
             animation-delay: 0s;
             text-align: center;
-            color: white;
+            color: $color-secundario;
             h2{
                 font-weight: 700;
                 font-size: 20px;
@@ -24,9 +17,7 @@ main{
         }
     }
     .datos-flia{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include flex(flex, row, space-between, center);
         margin: 50px 100px 0px 100px;
         div{
             h3{
@@ -34,7 +25,7 @@ main{
                 font-weight: 100;
                 color: rgba(128, 128, 128, 0.724);
                 span{
-                        font-size: 25px;
+                    font-size: 25px;
                 }
             }
         }
@@ -55,7 +46,7 @@ main{
                 font-size: 25px;
                 font-family: 'Nunito Sans', sans-serif;
                 font-weight: 400;
-                color: grey;
+                color: $color-cuaternario;
             }
         }
     }
@@ -84,16 +75,10 @@ main{
             }
         }
         section{
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
+            @include flex(flex, row, center, center);
             flex-wrap: wrap;
-            text-align: center;
             div{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
+                @include flex(flex, column, center, center);
                 margin: 0px 40px 10px 40px;
                 width: 325px;
                 height: 300px;
@@ -116,26 +101,19 @@ main{
                 p{
                     font-size: 15px;
                     font-weight: 500;
-                    color: grey;
+                    color: $color-cuaternario;
                 }
             }
         }
     }
     .cuatroc{
-        background-image: url(../img/cuatroc.png);
+        @include imagen-principal(url(../img/cuatroc.png),no-repeat,cover,center,400px, flex, center, center);
         text-align: center;
-        color: white;
-        height: 400px;
-        background-repeat: no-repeat;
-        background-size:cover;
-        background-position: center;
+        color: $color-secundario;
         margin: 80px 20px 0px 20px;
         box-shadow: -1px 0px 28px 1px rgba(0,0,0,0.56);
         -webkit-box-shadow: -1px 0px 28px 1px rgba(0,0,0,0.56);
         -moz-box-shadow: -1px 0px 28px 1px rgba(0,0,0,0.56);
-        display: flex;
-        justify-content: center;
-        align-items: center;
         div{
             h4{
                 font-size: 40px;
@@ -146,10 +124,7 @@ main{
         margin-top: 100px;
         margin-bottom: 100px;
         text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flex(flex, column, center, center);
         div{
             h3{
                 font-size: 150px;
@@ -158,14 +133,12 @@ main{
             h5{
                 margin-bottom: 30px;
                 margin-top: -25px;
-                color: grey;
+                color: $color-cuaternario;
                 font-weight: 300;
             }
         }
         .socialmedia{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
+            @include flex(flex, row, none, center);
             div{
                 a{
                     &:hover{
@@ -191,16 +164,9 @@ main{
 
 main{
     .mainnosotros{
-        background-image: url(../img/fondonosotros.png) ;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 500px ;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+        @include imagen-principal(url(../img/fondonosotros.png),no-repeat,cover,center,500px, flex, center, center);
         div{
-            color: white;
+            color: $color-secundario;
             text-align: center;
             h1{
                 font-size: 70px;
@@ -216,7 +182,7 @@ main{
             h3{
                 font-size: 300px;
                 font-weight: 200;
-                color:gray;
+                color:$color-cuaternario;
                 span{
                     font-size: 20px;
                 } 
@@ -241,8 +207,7 @@ main{
     }
     .fotoshistoricas{
         margin: 100px 0px;
-        display: flex;
-        justify-content: space-around;
+        @include flex(flex, row, space-around,none);
         flex-wrap: wrap;
         img{
             width: 700px;
@@ -253,8 +218,7 @@ main{
         }
     }
     .plantamodelo{
-        display: flex;
-        flex-direction: row-reverse;
+        @include flex(flex, row-reverse, none, none);
         margin: 80px 40px 80px 40px;
         .industrial{
             margin: 0 100px 0px 100px;
@@ -282,21 +246,19 @@ main{
             margin: 0px 0px 90px 50px;
         }
         section{
-            display: flex;
-            justify-content: space-around;
+            @include flex(flex, row, space-around, none);
             div{
                 text-align: center;
-                transition: transform 0.3s;
+                transition: transform 0.4s;
                 cursor: pointer;
                     &:hover{
                         transform: scale(1.04);
                     }
                 h5{
                     font-size: 40px;
-                    
                 }
                 p{
-                    color: gray;
+                    color: $color-cuaternario;
                 }
             }
         }
@@ -305,19 +267,12 @@ main{
 
 main{
     .mainproduc{
-        background-image: url(../img/fondoproductos.png);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 500px ;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+        @include imagen-principal(url(../img/fondoproductos.png),no-repeat,cover,center,500px, flex, center, center);
         div{
             h1{
                 font-size: 70px;
                 font-weight: 700;
-                color: white;
+                color: $color-secundario;
             }
         }
     }
@@ -333,17 +288,12 @@ main{
                 text-align: center;
             }
             div{
-                display: flex;
-                flex-direction: row;
+                @include flex(flex, row, center, none);
                 margin-bottom: 100px;
-                justify-content: center;
                 flex-wrap: wrap;
                 text-align: center;
                 div{
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
+                    @include flex(flex, column, center, center);
                     margin: 20px;
                     width: 325px;
                     height: 300px;
@@ -388,17 +338,10 @@ main{
 
 main{
     .maintiendas{
-        background-image: url(../img/fondotiendas.png);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 500px ;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+        @include imagen-principal(url(../img/fondotiendas.png),no-repeat,cover,center,500px, flex, center, center);
         div{
             text-align: center;
-            color: white;
+            color: $color-secundario;
             h1{
                 font-size: 70px;
                 font-weight: 700;
@@ -409,9 +352,7 @@ main{
         }
     }
     .info-tiendas{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+        @include flex(flex, row, space-around, none);
         flex-wrap: wrap;
         margin: 50px 20px 50px 20px;
         section{
@@ -424,7 +365,7 @@ main{
                 opacity: 0.1;
             }
             section{
-                color: grey;
+                color: $color-cuaternario;
                 height: 200px;
                 width: 680px;
                 display: flex;
@@ -444,7 +385,7 @@ main{
                             font-weight: 400;
                         }
                         a{
-                            color: grey;
+                            color: $color-cuaternario;
                             transition: color 0.5s;
                             &:hover{
                                 color: black;
@@ -471,16 +412,9 @@ main{
 
 main{
     .maincontacto{
-        background-image: url(../img/fondocontacto.png);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 500px ;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+        @include imagen-principal(url(../img/fondocontacto.png),no-repeat,cover,center,500px, flex, center, center);
         h1{
-            color: white;
+            color: $color-secundario;
             font-size: 70px;
             font-weight: 700;
         }
@@ -497,9 +431,7 @@ main{
         }
     }
     .contacto{
-        display: flex;
-        justify-content: space-evenly;
-        align-items: start;
+        @include flex(flex, row, space-evenly, start);
         flex-wrap: wrap;
         margin-top: 50px;
         margin-bottom: 100px;
@@ -508,10 +440,9 @@ main{
             grid-template-columns: 350px 350px;
             grid-template-rows: repeat(7,100px);
             .nombre{
-                display: flex;
-                flex-direction: column;
+                @include flex(flex, column, none, none);
                 padding-bottom: 20px;
-                color: grey;
+                color: $color-cuaternario;
                 label{
                     margin-bottom: 10px;
                 }
@@ -522,10 +453,9 @@ main{
                 }
             }
             .email{
-                display: flex;
-                flex-direction: column;
+                @include flex(flex, column, none, none);
                 padding-bottom: 20px;
-                color: grey;
+                color: $color-cuaternario;
                 label{
                     margin-bottom: 10px;
                 }
@@ -536,10 +466,9 @@ main{
                 }
             }
             .telefono{
-                display: flex;
-                flex-direction: column;
+                @include flex(flex, column, none, none);
                 padding-bottom: 20px;
-                color: grey;
+                color: $color-cuaternario;
                 label{
                     margin-bottom: 10px;
                 }
@@ -550,10 +479,9 @@ main{
                 }
             }
             .provincia{
-                display: flex;
-                flex-direction: column;
+                @include flex(flex, column, none, none);
                 padding-bottom: 20px;
-                color: grey;
+                color: $color-cuaternario;
                 label{
                     margin-bottom: 10px;
                 }
@@ -564,10 +492,9 @@ main{
                 }
             }
             .ciudad{
-                display: flex;
-                flex-direction: column;
+                @include flex(flex, column, none, none);
                 padding-bottom: 20px;
-                color: grey;
+                color: $color-cuaternario;
                 grid-column: 1/3;
                 grid-row: 3/4;
                 label{
@@ -580,10 +507,9 @@ main{
                 }
             }
             .motivo{
-                display: flex;
-                flex-direction: column;
+                @include flex(flex, column, none, none);
                 padding-bottom: 20px;
-                color: grey;
+                color: $color-cuaternario;
                 grid-column: 1/3;
                 grid-row: 4/5;
                 label{
@@ -600,10 +526,9 @@ main{
                 }
             }
             .mensaje{
-                display: flex;
-                flex-direction: column;
+                @include flex(flex, column, none, none);
                 padding-bottom: 20px;
-                color: grey;
+                color: $color-cuaternario;
                 grid-column: 1/3;
                 grid-row: 5/7;
                 margin-bottom: 40px;
@@ -617,10 +542,9 @@ main{
                 }
             }
             .boton{
-                display: flex;
-                flex-direction: column;
+                @include flex(flex, column, none, none);
                 padding-bottom: 20px;
-                color: grey;
+                color: $color-cuaternario;
                 grid-column: 1/2;
                 grid-row: 7/8;
                 button{
@@ -632,9 +556,12 @@ main{
                     height: 50px;
                     border-radius: 5px;
                     cursor: pointer;
-                    transition: transform 0.4s ease-in;
+                    transition: transform 0.3s ease-in-out, box-shadow 0.3s;;
                     &:hover{
-                        transform: translateY(-4px)
+                        transform: translateY(-5px);
+                        box-shadow: 0px 46px 54px 4px rgba(0,0,0,0.25);
+-webkit-box-shadow: 0px 46px 54px 4px rgba(0,0,0,0.25);
+-moz-box-shadow: 0px 46px 54px 4px rgba(0,0,0,0.25);
                     }
                 }
             }
@@ -651,12 +578,12 @@ main{
                     padding: 30px 0px 20px 0px;
                 }
                 p{
-                    color: grey;
+                    color: $color-cuaternario;
                     font-size: 15px;
                     font-weight: 400;
                 }
                 a{
-                    color: grey;
+                    color: $color-cuaternario;
                     font-size: 15px;
                     font-weight: 400;
                     text-decoration: none; 
