@@ -64,12 +64,12 @@ main .datos-flia {
   main .datos-flia div h3 {
     font-size: 300px;
     font-weight: 100;
-    color: rgba(128, 128, 128, 0.724); }
+    color: rgba(128, 128, 128, 0.258); }
     main .datos-flia div h3 span {
       font-size: 25px; }
   main .datos-flia .familia {
     width: 55%;
-    border: 2px solid rgba(0, 0, 0, 0.094);
+    border: 2px solid rgba(0, 0, 0, 0.055);
     padding: 20px;
     margin-left: 20px; }
     main .datos-flia .familia h4 {
@@ -81,7 +81,7 @@ main .datos-flia {
     main .datos-flia .familia .sucursales {
       font-size: 25px;
       font-family: 'Nunito Sans', sans-serif;
-      font-weight: 400;
+      font-weight: 300;
       color: grey; }
 
 main .container {
@@ -204,7 +204,7 @@ main .datosnosotros {
   display: flex;
   margin: 80px 40px 80px 40px; }
   main .datosnosotros .años {
-    margin: -80px 0px 0px 80px; }
+    margin: -65px 0px 0px 80px; }
     main .datosnosotros .años h3 {
       font-size: 300px;
       font-weight: 200;
