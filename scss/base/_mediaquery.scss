@@ -69,6 +69,20 @@
                 }
             }
         }
+        .redes{
+            .socialmedia{
+                div{
+                    a{
+                        img{
+                            transition: none;
+                            &:hover{
+                                transform: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
     footer{
         height: 600px;
@@ -438,6 +452,18 @@
         }
         .muebles{
             margin: 100px 10px 100px 10px;
+            section{
+                div{
+                    div{
+                        img{
+                            transition: none;
+                            &:hover{
+                                transform: none;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

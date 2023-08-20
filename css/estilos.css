@@ -64,7 +64,7 @@ main .datos-flia {
   main .datos-flia div h3 {
     font-size: 300px;
     font-weight: 100;
-    color: rgba(128, 128, 128, 0.258); }
+    color: rgba(128, 128, 128, 0.404); }
     main .datos-flia div h3 span {
       font-size: 25px; }
   main .datos-flia .familia {
@@ -691,6 +691,10 @@ footer {
     height: 300px; }
     main .cuatroc div h4 {
       font-size: 20px; }
+  main .redes .socialmedia div a img {
+    transition: none; }
+    main .redes .socialmedia div a img:hover {
+      transform: none; }
   footer {
     height: 600px; }
     footer section {
@@ -888,7 +892,11 @@ footer {
   main .mainproduc div h1 {
     font-size: 45px; }
   main .muebles {
-    margin: 100px 10px 100px 10px; } }
+    margin: 100px 10px 100px 10px; }
+    main .muebles section div div img {
+      transition: none; }
+      main .muebles section div div img:hover {
+        transform: none; } }
 
 @media screen and (max-width: 395px) {
   main .mainproduc div h1 {
