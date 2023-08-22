@@ -714,14 +714,12 @@ footer {
         grid-row: 6/7; } }
 
 @media screen and (max-width: 645px) {
-  main .titulo div {
-    margin-top: -150px; }
-    main .titulo div h2 {
-      font-weight: 700;
-      font-size: 20px; }
-    main .titulo div h1 {
-      font-size: 40px;
-      font-weight: 700; }
+  main .titulo div h2 {
+    font-weight: 700;
+    font-size: 20px; }
+  main .titulo div h1 {
+    font-size: 40px;
+    font-weight: 700; }
   main .redes div h3 {
     font-size: 100px;
     font-weight: 100; }
